@@ -6,16 +6,13 @@ import { Observable } from 'rxjs';
   providedIn: 'root',
 })
 export class CatService {
-  private catFactUrl = 'https://meowfacts.herokuapp.com/';
-  private catImageUrl = 'https://api.thecatapi.com/v1/images/search';
-
   constructor(private http: HttpClient) {}
 
   getCatFact(): Observable<any> {
-    return this.http.get(this.catFactUrl);
+    return this.http.get('https://meowfacts.herokuapp.com/');
   }
 
   getCatImage(): Observable<any> {
-    return this.http.get(this.catImageUrl);
+    return this.http.get('https://api.thecatapi.com/v1/images/search');
   }
 }

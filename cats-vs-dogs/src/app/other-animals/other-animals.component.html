@@ -1,0 +1,19 @@
+<div class="container">
+  <div class="half" (click)="showDuck()">
+    <h1>Ducks</h1>
+    <div *ngIf="duckImage">
+      <img [src]="duckImage" alt="Random Duck" />
+      <p>{{ duckFact }}</p>
+    </div>
+  </div>
+  <div class="half" (click)="showFox()">
+    <h1>Foxes</h1>
+    <div *ngIf="foxImage">
+      <img [src]="foxImage" alt="Random Fox" />
+      <p>{{ foxFact }}</p>
+    </div>
+  </div>
+</div>
+<div class="button-container">
+  <button (click)="goToMainPage()">Go to Main Page</button>
+</div>

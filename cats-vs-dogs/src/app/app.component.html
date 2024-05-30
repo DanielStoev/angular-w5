@@ -1,16 +1,3 @@
-<div class="container">
-  <div class="half" (click)="showCat()">
-    <h1>Cats</h1>
-    <div *ngIf="catFact">
-      <img [src]="catImage" alt="Random Cat" />
-      <p>{{ catFact }}</p>
-    </div>
-  </div>
-  <div class="half" (click)="showDog()">
-    <h1>Dogs</h1>
-    <div *ngIf="dogFact">
-      <img [src]="dogImage" alt="Random Dog" />
-      <p>{{ dogFact }}</p>
-    </div>
-  </div>
-</div>
+<main>
+  <router-outlet></router-outlet>
+</main>
