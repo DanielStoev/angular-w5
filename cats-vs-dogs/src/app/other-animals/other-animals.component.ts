@@ -11,7 +11,7 @@ import { FoxService } from './fox.service';
   imports: [CommonModule, HttpClientModule],
   providers: [DuckService, FoxService],
   templateUrl: './other-animals.component.html',
-  styleUrls: [],
+  styleUrls: ['./other-animals.component.css'],
 })
 export class OtherAnimalsComponent{
   title: string = 'second-page';

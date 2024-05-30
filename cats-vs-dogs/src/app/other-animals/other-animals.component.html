@@ -1,14 +1,14 @@
 <div class="container">
   <div class="half" (click)="showDuck()">
     <h1>Ducks</h1>
-    <div *ngIf="duckImage">
+    <div *ngIf="duckImage" class="content">
       <img [src]="duckImage" alt="Random Duck" />
       <p>{{ duckFact }}</p>
     </div>
   </div>
   <div class="half" (click)="showFox()">
     <h1>Foxes</h1>
-    <div *ngIf="foxImage">
+    <div *ngIf="foxImage" class="content">
       <img [src]="foxImage" alt="Random Fox" />
       <p>{{ foxFact }}</p>
     </div>

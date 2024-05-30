@@ -11,7 +11,7 @@ import { DogService } from './dog.service';
   imports: [CommonModule, HttpClientModule, RouterModule],
   providers: [CatService, DogService],
   templateUrl: './cats-and-dogs.component.html',
-  styleUrls: [],
+  styleUrls: ['./cats-and-dogs.component.css'],
 })
 export class CatsAndDogsComponent {
   title: string = 'cats-vs-dogs';
