@@ -1,13 +1,13 @@
 <div class="container">
     <div class="half" (click)="showCat()">
-        <h1>Cats</h1>
+        <h1>Click me for Cat pictures and facts!</h1>
         <div *ngIf="catFact">
             <img [src]="catImage" alt="Random Cat" />
             <p>{{ catFact }}</p>
         </div>
     </div>
     <div class="half" (click)="showDog()">
-        <h1>Dogs</h1>
+        <h1>Click me for Dog pictures and facts!</h1>
         <div *ngIf="dogFact">
             <img [src]="dogImage" alt="Random Dog" />
             <p>{{ dogFact }}</p>
@@ -15,5 +15,5 @@
     </div>
 </div>
 <div class="button-container">
-    <button (click)="goToSecondPage()">Go to Second Page</button>
+    <button (click)="goToSecondPage()">Go to Bonus Animals</button>
 </div>

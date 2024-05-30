@@ -28,22 +28,14 @@ export class OtherAnimalsComponent{
   ) {}
 
   showDuck(): void {
-    this.duckService.getDuckFact().subscribe((data: any) => {
-      this.duckFact = data.fact;
-    });
-
     this.duckService.getDuckImage().subscribe((data: any) => {
       this.duckImage = data.url;
     });
   }
 
   showFox(): void {
-    this.foxService.getFoxFact().subscribe((data: any) => {
-      this.foxFact = data.fact;
-    });
-
     this.foxService.getFoxImage().subscribe((data: any) => {
-      this.foxImage = data.url;
+      this.foxImage = data.image;
     });
   }
 

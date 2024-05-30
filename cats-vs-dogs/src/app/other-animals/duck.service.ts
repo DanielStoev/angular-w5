@@ -6,16 +6,11 @@ import { Observable } from 'rxjs';
   providedIn: 'root',
 })
 export class DuckService {
-  private duckFactUrl = 'https://some-api.com/duck/fact';
-  private duckImageUrl = 'https://some-api.com/duck/image';
-
   constructor(private http: HttpClient) {}
 
-  getDuckFact(): Observable<any> {
-    return this.http.get(this.duckFactUrl);
-  }
+  private proxyUrl = 'https://cors-anywhere.herokuapp.com/';
 
   getDuckImage(): Observable<any> {
-    return this.http.get(this.duckImageUrl);
+    return this.http.get(`${this.proxyUrl}https://random-d.uk/api/random`);
   }
 }

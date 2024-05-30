@@ -47,6 +47,7 @@ p {
     font-size: 1.2em;
     color: #555;
     max-width: 80%;
+    padding-left: 10%;
 }
 
 .button-container {
